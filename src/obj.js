@@ -11,3 +11,5 @@ let User = {
         zip: '10001'
     }
 }
+
+export {User};
