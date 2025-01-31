@@ -2,7 +2,7 @@ import {Command} from 'commander';
 import fs from 'fs';
 import inquirer from 'inquirer';
 import {prompt1} from'./src/var.js';
-
+import {newAccount} from "./src/newProcess.js";
 const program = new Command();
 
 program
@@ -16,8 +16,12 @@ program.command('newProcess')
         inquirer.prompt(prompt1)
             .then(answers => {
             let process = answers.selectedProcess;
-            if (process === 'New account');
-            else;
+            if (process === 'New account'){
+                newAccount();
+            }
+            else{
+
+            }
         }).catch(err => {
             console.error('Error:', err.message);
         });
