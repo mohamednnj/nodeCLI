@@ -6,7 +6,7 @@ import {newAccount} from "./src/newProcess.js";
 const program = new Command();
 
 program
-    .name('Bank Elsery')
+    .name('osama elsey Elsery')
     .description('This is a simple banking system')
     .version('1.0.0');
 
